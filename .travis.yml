@@ -11,7 +11,7 @@ before_script:
 - npm install -g @vue/cli
 - npm install
 script:
-- npm run electron:build
+- npm run release
 deploy:
   provider: releases
   skip_cleanup: true
