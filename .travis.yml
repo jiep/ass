@@ -12,8 +12,3 @@ before_script:
 - npm install
 script:
 - npm run release
-deploy:
-  provider: releases
-  skip_cleanup: true
-  on:
-    branch: master
