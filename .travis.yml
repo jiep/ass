@@ -1,0 +1,17 @@
+os:
+  - linux
+  - osx
+language: node_js
+node_js:
+- '10'
+branches:
+  only:
+  - master
+before_script:
+- npm install -g @vue/cli
+- npm install
+script:
+- npm run electron:build
+cache:
+  directories:
+  - node_modules
