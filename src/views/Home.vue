@@ -1,5 +1,6 @@
 <template lang="pug">
-  div
+  .home
+    h1 This is a home page
     router-link(:to="{ name: 'about' }") About
 </template>
 
