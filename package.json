@@ -12,6 +12,9 @@
     "release": "vue-cli-service electron:build"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.7",
+    "@fortawesome/free-solid-svg-icons": "^5.4.2",
+    "@fortawesome/vue-fontawesome": "^0.1.1",
     "bulma": "^0.7.2",
     "electron-titlebar": "0.0.3",
     "vue": "^2.5.17",
