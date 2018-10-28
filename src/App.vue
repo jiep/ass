@@ -1,16 +1,12 @@
 <template lang="pug">
   div(id="app")
     h1 Hello Electron!
+    router-view/
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+  name: 'app'
 }
 </script>
 
