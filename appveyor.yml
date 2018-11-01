@@ -6,6 +6,8 @@ platform:
 init:
   - git config --global core.autocrlf input
 
+image: Visual Studio 2017
+
 install:
   - ps: Install-Product node 10 x64
   - git reset --hard HEAD

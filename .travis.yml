@@ -9,6 +9,6 @@ branches:
   - master
 before_script:
 - npm install -g @vue/cli
-- npm install > /dev/null
+- npm install
 script:
 - npm run release
