@@ -1,23 +1,27 @@
 <template lang="pug">
   div(id="app")
-    h1 Hello Electron!
-    router-view/
+    Bar/
+    .content
+      router-view/
 </template>
 
 <script>
+import Bar from '@/components/Bar'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Bar
+  }
 }
 </script>
 
 <style lang="sass">
+@import @/assets/styles.sass
 #app
   height: 100%
   width: 100%
   border: 0
-  background-color: black
-  color: white
-
-  h1
-    margin: 0
+  background-color: $body-background-color
+  color: black
 </style>
