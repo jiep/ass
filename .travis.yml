@@ -8,7 +8,8 @@ branches:
   only:
   - master
 before_script:
+- npm config set loglevel warn
 - npm install -g @vue/cli
-- npm install --loglevel warn
+- npm install
 script:
 - npm run release
