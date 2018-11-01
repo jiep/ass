@@ -9,7 +9,7 @@
 
 <script>
 import Bar from '@/components/Bar'
-// const cv =  require('opencv4nodejs')
+const cv =  require('opencv4nodejs')
 // import * as path from 'path'
 // import * as fs from 'fs'
 
@@ -24,14 +24,14 @@ export default {
     }
   },
   mounted() {
-    // if (!cv.xmodules.face) {
-    //   throw new Error('exiting: opencv4nodejs compiled without face module');
-    //   this.isCv = false;
-    // }else{
-    //   this.isCv = true;
-    // }
-    // const classifier = new cv.CascadeClassifier('public/HAAR_FRONTALFACE_ALT2.xml');
-    // console.log(classifier);
+    if (!cv.xmodules.face) {
+      throw new Error('exiting: opencv4nodejs compiled without face module');
+      this.isCv = false;
+    }else{
+      this.isCv = true;
+    }
+    const classifier = new cv.CascadeClassifier('public/HAAR_FRONTALFACE_ALT2.xml');
+    console.log(classifier);
   }
 }
 </script>

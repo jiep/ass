@@ -43,6 +43,7 @@ export default {
 <style lang="sass">
   video
     object-fit: fill
-    width: 100%
-    height: inherit
+    width: 100% !important
+    height: auto !important
+    background-color: black
 </style>
